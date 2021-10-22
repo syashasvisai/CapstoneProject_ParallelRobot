@@ -12,6 +12,7 @@ static void main_executeSystem(Robot_2RPR *instancePtr);
 
 static void main_executeSystem(Robot_2RPR *instancePtr)
 {
+  // Initialize function 'executeSystem' input arguments.
   coder::array<double, 1U> xPlatform_;
   coder::array<double, 2U> odeResult;
   coder::array<double, 1U> yPlatform_;
@@ -19,20 +20,19 @@ static void main_executeSystem(Robot_2RPR *instancePtr)
   struct0_T r;
   double coordinates[8];
   double time_params[3];
-  // Initialize function 'executeSystem' input arguments.
+  
   // Initialize function input argument 'params'.
-  // Initialize function input argument 'coordinates'.
-  // Initialize function input argument 'time_params'.
-  // Call the entry-point 'executeSystem'.
   r.m1 = 1;
   r.m2 = 1;
   r.m3 = 1;
   r.a = 2*175;
-
+  
+  // Initialize function input argument 'time_params'.
   time_params[0] = 0; // init_time
   time_params[1]= 10; //final_time
   time_params[2] = 0.001; // time_step
 
+  // Initialize function input argument 'coordinates'.
   coordinates[0] = 50; // x_initial (platform)
   coordinates[1] = 50; // y_initial
   coordinates[2] = -r.a/2; // joint_1 x coordinate
@@ -43,6 +43,7 @@ static void main_executeSystem(Robot_2RPR *instancePtr)
   coordinates[7] = 80;// y_target
 
 
+  // Call the entry-point 'executeSystem'.
   instancePtr->executeSystem(&r, coordinates, time_params, t, odeResult, xPlatform_, yPlatform_);
   
   // Plot position error in x coordinate to compare with Matlab results
@@ -73,7 +74,6 @@ int main(int, char **)
 {
   Robot_2RPR classInstance;
   // Invoke the entry-point functions.
-  // You can call entry-point functions multiple times.
   main_executeSystem(&classInstance);
   
   return 0;
