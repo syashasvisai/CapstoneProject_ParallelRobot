@@ -12,6 +12,8 @@ The Project is a simulation of 2RPR planar parallel robot executing a a pick and
 
 ![2RPR demo](/images/PR_gif.gif)
 
+A demo of the Pick and Place task. The **x** denotes the Target location and **o** is the initial position.
+
 * **main_PR.cpp** is the main file where the execution takes place. The executable is a position error plot in the x-coordinate and can be found in the *build* folder. This plot can be validated by generating a similar plot in Matlab through the **main_sys** in the src_matlab folder.
 * **Robot_2RPR** is the file where the system is executed. It has the method *executeSystem* which performs the following functions
 	* The method **CalcVars** returns the system variables such as the initial state vector for the Parallel robot. This initial state vector and the time span is defined in the class **ClassSysVars.cpp**.
