@@ -2,7 +2,7 @@
 
 This is my Capstone project for the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213).
 
-In this project, I have integrated the concepts I have learnt throughout this course with my Research Project that I had executed in Matlab. The project is a Pick-and-Place Parallel Robot (2RPR). The aim of this implementation is to gain knowledge of the Matlab coder app and OOP in Matlab and integrate it with my learnings from this course. Writing the Matlab code keeping in mind its software implementation in C++ is the most important takeawy for me from this project.
+In this project, I have integrated the concepts I have learnt throughout this course with my Research Project that I had executed in Matlab. The project is a Pick-and-Place Parallel Robot (2RPR). The aim of this implementation is to integrate my learnings from this course with my existing knowledge in Matlab. For this project, I also learnt OOP in Matlab and expanded my skill sets by learning the Matlab Coder application. Writing Matlab code for Controlling dynamical systems keeping in mind its software implementation in C++ is the most important takeawy for me from this project.
 
 No additional libraries are required to run this project.
 
